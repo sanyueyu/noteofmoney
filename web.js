@@ -10,7 +10,7 @@ var application_root = __dirname,
 var app = express();
 
 //Connect to database
-mongoose.connect(os.getenv('MONGOHQ_URL') );
+mongoose.connect(process.env.MONGOHQ_URL );
 
 //Schemas
 var Keywords = new mongoose.Schema({
